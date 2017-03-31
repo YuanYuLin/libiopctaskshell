@@ -15,7 +15,7 @@ uint8_t* get_help_shell()
 
 void* task_handler_shell(void* ptr)
 {
-    GET_INSTANCE(ops_misc)->execute_cmd("/bin/busybox ash", "/var/log/iopc_ash.log");
+    GET_INSTANCE_MISC_OBJ()->execute_cmd("/bin/busybox ash", "/var/log/iopc_ash.log");
 }
 
 
